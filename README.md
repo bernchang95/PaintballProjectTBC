@@ -1,5 +1,8 @@
 # Paintball Target Project
 
+Refer to the Schematics.jpg file to ensure you get the right connection, some pin connection numbers can be changed depending on the declarations you did in your Arduino sketch.
+Marked with *.
+
 Continued from previous updates.
 
 Summary of progress:
@@ -21,10 +24,16 @@ Summary of progress:
 
 <h2> 4. RF24Network.h library</h2>
 <p> As I explained just now, the current library is causing some bugs that does not auto-refresh the radio modules properly each time you reconnect the system after some time. I will paste the link where I get this idea from and also its respective datasheet for you to study how the library works. I may have missed some functions that ensures the system works bug-free and allows plug and play.</p>
-  
+
+<h2> 5. Wiring connection </h2>
+<p> Another common problem faced during troubleshooting, always double check your wiring to see if it is loose or damaged. Highly recommend for you to use LEDs to check if jumper wire is okay. Use a new one if necessary as there may be a potential where the material degrades after a few months of usage.</p>
+
+<h2> 6. Sensor or module damage </h2>
+<p> Although this may happen if you connect to the wrong voltage supply, sometimes it could be due to wrong Arduino pin connection or sensor's voltage supply connection is not stable.</p>
+
 <strong>Temporary solution:</strong> Re-upload the codes using the sketch to the arduino station (with LCD) and one of the target system.
 NRF_Module_Verification_Receiver: To the main station Arduino (with LCD)
-NRF_Module_Verification_Transmiter: To one of the target Arduinos
+NRF_Module_Verification_Transmiter: To one of the target Arduinos / Transmitter Arduinos
 
 <p> Once this process is completed, reupload the main sketch back to the system. The system should work properly again...</p>
 
@@ -41,16 +50,16 @@ NRF_Module_Verification_Transmiter: To one of the target Arduinos
 <p> https://howtomechatronics.com/tutorials/arduino/arduino-wireless-communication-nrf24l01-tutorial/ - Manual NRF module setup </p>
 
 <h1> Datasheets for NRF radio modules and class declaration </h1>
-Compulsory libraries for Arduino:
-RF24 Network.h
-1. Download location - https://www.arduinolibraries.info/libraries/rf24-network
-2. Function Guideline - https://tmrh20.github.io/RF24Network/annotated.html (A lot of functions inside... hence you need to click around to find what you need in here.)
-LiquidCrystal_I2C.h
-1. Download location - https://www.arduinolibraries.info/libraries/liquid-crystal-i2-c
-2. Function Guideline - https://github.com/johnrickman/LiquidCrystal_I2C
-RF24.h
-1. Download location - https://www.arduinolibraries.info/libraries/rf24
-2. Function Guideline - https://tmrh20.github.io/RF24/classRF24.html
+Compulsory libraries for Arduino: <br/>
+RF24 Network.h <br/>
+1. Download location - https://www.arduinolibraries.info/libraries/rf24-network <br/>
+2. Function Guideline - https://tmrh20.github.io/RF24Network/annotated.html (A lot of functions inside... hence you need to click around to find what you need in here.) <br/>
+LiquidCrystal_I2C.h <br/>
+1. Download location - https://www.arduinolibraries.info/libraries/liquid-crystal-i2-c <br/>
+2. Function Guideline - https://github.com/johnrickman/LiquidCrystal_I2C <br/>
+RF24.h <br/>
+1. Download location - https://www.arduinolibraries.info/libraries/rf24 <br/>
+2. Function Guideline - https://tmrh20.github.io/RF24/classRF24.html <br/>
 
 <h1> Programming Reminder</h1>
 <p> Make sure you conduct good practices when you code. Your code must be easy to understand and utilize comments to ease your troubleshooting experience. Also, ensure your codes are robust because project vision or featuers may change overtime. Otherwise, you will have a hard time changing the code structure.</p>
