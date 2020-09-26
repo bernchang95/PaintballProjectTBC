@@ -1,6 +1,6 @@
 # Paintball Target Project
 
-Refer to the Schematics.jpg file to ensure you get the right connection, some pin connection numbers can be changed depending on the declarations you did in your Arduino sketch.
+Refer to the Schematics.docx file to ensure you get the right connection, some pin connection numbers can be changed depending on the declarations you did in your Arduino sketch.
 Marked with *.
 
 Continued from previous updates.
