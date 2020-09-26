@@ -31,6 +31,12 @@ Summary of progress:
 <h2> 6. Sensor or module damage </h2>
 <p> Although this may happen if you connect to the wrong voltage supply, sometimes it could be due to wrong Arduino pin connection or sensor's voltage supply connection is not stable.</p>
 
+<p> Arduino UNO pinout: </p>
+<p> Arduino Nano pinout: </p>
+<p> <strong>3.3V input</strong> NRF24L01 radio module (with/without antenna) pinout: </p>
+<p> <strong>3.3V or 5V input</strong> Vibration sensor pinout: </p>
+**For these datasheets (technical specifications), please Google search them as it is easy to find them online. Take note on the recommended voltage input for the sensors and radio modules**
+
 <strong>Temporary solution:</strong> Re-upload the codes using the sketch to the arduino station (with LCD) and one of the target system.
 NRF_Module_Verification_Receiver: To the main station Arduino (with LCD)
 NRF_Module_Verification_Transmiter: To one of the target Arduinos / Transmitter Arduinos
