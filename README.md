@@ -49,6 +49,8 @@ NRF_Module_Verification_Transmiter: To one of the target Arduinos / Transmitter 
 
 <p> https://howtomechatronics.com/tutorials/arduino/arduino-wireless-communication-nrf24l01-tutorial/ - Manual NRF module setup </p>
 
+<p> https://www.electronicshub.org/arduino-multitasking-tutorial/ - Arduino multi-tasking </p>
+
 <h1> Datasheets for NRF radio modules and class declaration </h1>
 Compulsory libraries for Arduino: <br/>
 RF24 Network.h <br/>
