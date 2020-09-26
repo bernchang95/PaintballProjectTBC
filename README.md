@@ -5,7 +5,7 @@ Continued from previous updates.
 Summary of progress:
 1. Multiple target detection (up to 2 targets)
 2. Extender is still in progress (More research and troubleshooting is required)
-3. 2 Methodologies have been used to control the Arduino's Radio module (RF24Network.h library-current and manual NRF module setup.
+3. 2 Methodologies have been used to control the Arduino's Radio module (RF24Network.h library-current and manual NRF module setup.)
 
 <h1> Potential troubleshooting issues (Please take note on this!)</h1>
 <h2> 1. NRF wrong pin declare on CE/CSN pins</h2>
@@ -30,23 +30,27 @@ NRF_Module_Verification_Transmiter: To one of the target Arduinos
 
 <h1> Useful References</h1>
 <p> Some good references for you to understand my codes a bit better, since that's how I get started anyways... might as well :) </p>
-https://www.youtube.com/watch?v=ZD02a9DHgTg - Visual Basic.NET stopwatch project. This teaches you the basics on using Visual Studio, and also how the Timer Counter of the paintball project is setup.
+<p> https://www.youtube.com/watch?v=ZD02a9DHgTg - Visual Basic.NET stopwatch project. This teaches you the basics on using Visual Studio, and also how the Timer Counter of the paintball project is setup. </p>
 
-https://docs.microsoft.com/en-us/dotnet/visual-basic/programming-guide/language-features/delegates/how-to-invoke-a-delegate-method - This is a basic code example on how the Invoke command with Delegate functions (you see it a lot in the GUI code) is done. Executes process thread without causing the program to lag or "crash". Google "VB.net Invokes and Delegates" if you don't understand this tutorial.
+<p> https://docs.microsoft.com/en-us/dotnet/visual-basic/programming-guide/language-features/delegates/how-to-invoke-a-delegate-method - This is a basic code example on how the Invoke command with Delegate functions (you see it a lot in the GUI code) is done. Executes process thread without causing the program to lag or "crash". Google "VB.net Invokes and Delegates" if you don't understand this tutorial. </p>
 
-https://www.hackster.io/techno-brothers/arduino-with-vb-net-gui-control-e3a262 - Simple VB.net project on how to control the Arduino via USB connection. Great to start here so you understand how the Target project works.
+<p> https://www.hackster.io/techno-brothers/arduino-with-vb-net-gui-control-e3a262 - Simple VB.net project on how to control the Arduino via USB connection. Great to start here so you understand how the Target project works. </p>
+
+<p> https://howtomechatronics.com/tutorials/arduino/how-to-build-an-arduino-wireless-network-with-multiple-nrf24l01-modules/ - RF24Network.h library usage tutorial </p>
+
+<p> https://howtomechatronics.com/tutorials/arduino/arduino-wireless-communication-nrf24l01-tutorial/ - Manual NRF module setup </p>
 
 <h1> Datasheets for NRF radio modules and class declaration </h1>
 Compulsory libraries for Arduino:
 RF24 Network.h
-1. Download location - 
-2. Guideline - 
+1. Download location - https://www.arduinolibraries.info/libraries/rf24-network
+2. Function Guideline - https://tmrh20.github.io/RF24Network/annotated.html (A lot of functions inside... hence you need to click around to find what you need in here.)
 LiquidCrystal_I2C.h
-1. Download location - 
-2. Guideline - 
+1. Download location - https://www.arduinolibraries.info/libraries/liquid-crystal-i2-c
+2. Function Guideline - https://github.com/johnrickman/LiquidCrystal_I2C
 RF24.h
-1. Download location - 
-2. Guideline - 
+1. Download location - https://www.arduinolibraries.info/libraries/rf24
+2. Function Guideline - https://tmrh20.github.io/RF24/classRF24.html
 
 <h1> Programming Reminder</h1>
 <p> Make sure you conduct good practices when you code. Your code must be easy to understand and utilize comments to ease your troubleshooting experience. Also, ensure your codes are robust because project vision or featuers may change overtime. Otherwise, you will have a hard time changing the code structure.</p>
